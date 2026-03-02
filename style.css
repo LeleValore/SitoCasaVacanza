@@ -286,7 +286,7 @@ input:checked+.slider:before {
    HOME PAGE - HERO SECTION (RESPONSIVE)
    ============================================================ */
 .home-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/catania-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/catania-bg.webp');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
