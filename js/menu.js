@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Chiudi menu quando clicchi fuori
+    // Chiudi menu quando clicchi fuori (ma non quando clicchi dentro la mobile-menu)
     document.addEventListener('click', function (event) {
-        const isClickInside = (event.target.closest('nav') || event.target.closest('.hamburger'));
+        const isClickInside = (event.target.closest('nav') || event.target.closest('.hamburger') || event.target.closest('.mobile-menu'));
         if (!isClickInside && mobileMenu.classList.contains('active')) {
             hamburger.classList.remove('active');
             mobileMenu.classList.remove('active');

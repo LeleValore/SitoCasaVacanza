@@ -131,7 +131,8 @@ nav ul li a:hover {
     flex-direction: column;
     padding-top: 5rem;
     gap: 1.5rem;
-    z-index: 1000;
+    z-index: 10000;
+    pointer-events: auto;
     transition: left var(--transition);
     overflow-y: auto;
 }
