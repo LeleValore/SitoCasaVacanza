@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Il Vicolo del Sole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="internal">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto Casa</a></li>
+                <li><a href="dintorni.html">Cosa Vedere</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+
+            <!-- HAMBURGER MENU ICON -->
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="language-switch notraslate" translate="no">
+                <span class="lang-label">ITA</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                    <span class="slider"></span>
+                </label>
+                <span class="lang-label">EN</span>
+            </div>
+            <div id="google_translate_element"></div>
+        </nav>
+
+        <!-- MOBILE MENU SIDEBAR -->
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto Casa</a></li>
+                <li><a href="dintorni.html">Cosa Vedere</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="max-width: 900px; margin: 40px auto; padding: 20px;">
+        <h1 style="text-align: center; color: #8B4513;">Prenota il tuo soggiorno</h1>
+        <p style="text-align: center; margin-bottom: 40px;">Scegli la tua piattaforma preferita o contattaci
+            direttamente per un preventivo personalizzato.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+
+            <a href="https://wa.me/393425695486" target="_blank"
+                style="display: flex; align-items: center; justify-content: center; padding: 20px; background-color: #25D366; color: white; text-decoration: none; border-radius: 12px; font-size: 1.4rem; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.2s;">
+                <span style="margin-right: 15px;">💬</span> Contattaci su WhatsApp
+            </a>
+
+            <a href="https://www.airbnb.it/rooms/1495789088167128666?unique_share_id=6f8a5b53-0cd8-43e2-9dd2-b82424b159f6"
+                target="_blank"
+                style="display: flex; align-items: center; justify-content: center; padding: 20px; background-color: #FF5A5F; color: white; text-decoration: none; border-radius: 12px; font-size: 1.4rem; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.2s;">
+                <span style="margin-right: 15px;">🏠</span> Prenota su Airbnb
+            </a>
+
+            <a href="https://www.booking.com/hotel/it/il-vicolo-del-sole.it.html" target="_blank"
+                style="display: flex; align-items: center; justify-content: center; padding: 20px; background-color: #003580; color: white; text-decoration: none; border-radius: 12px; font-size: 1.4rem; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.2s;">
+                <span style="margin-right: 15px;">🏨</span> Prenota su Booking.com
+            </a>
+
+            <a href="https://www.subito.it/case-vacanza/casa-vacanza-a-300mt-dal-duomo-di-catania-catania-636745587.htm?utm_medium=referral&utm_source=subito&utm_campaign=free-engagement-ad_detail"
+                target="_blank" class="btn-partner subito">
+                <span style="margin-right: 15px;">🛒</span> Prenota su Subito.it
+            </a>
+
+        </div>
+
+        <div
+            style="margin-top: 50px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center;">
+            <h2 style="color: #8B4513;">Altre Informazioni</h2>
+            <p><strong>👤 Proprietario:</strong> Benedetto Giuffrida</p>
+            <p><strong>📧 Email:</strong> benedettogiuffrida@gmail.com</p>
+            <p><strong>📍 Indirizzo:</strong> Vicolo della Sfera 19, Catania</p>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; color: #666; margin-top: 40px;">
+        <p>© 2026 Il Vicolo del Sole - Catania</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

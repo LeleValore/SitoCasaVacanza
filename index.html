@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Vicolo del Sole - Catania Centro</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="home-bg">
+        <header style="position: absolute; top: 0; width: 100%;">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="foto.html">Foto Casa</a></li>
+                    <li><a href="dintorni.html">Cosa Vedere</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+
+                <!-- HAMBURGER MENU ICON -->
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="language-switch notraslate" translate="no">
+                    <span class="lang-label">ITA</span>
+                    <label class="switch">
+                        <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="lang-label">EN</span>
+                </div>
+                <div id="google_translate_element"></div>
+            </nav>
+
+            <!-- MOBILE MENU SIDEBAR -->
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="foto.html">Foto Casa</a></li>
+                    <li><a href="dintorni.html">Cosa Vedere</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="hero-text">
+            <h1>Il Vicolo del Sole</h1>
+            <p>Posizione Strategica nel cuore di Catania</p>
+            <a href="foto.html" class="btn-hero">Guarda le foto della casa</a>
+        </div>
+    </div>
+
+    <section class="full-description">
+        <div class="description-content">
+            <h2 style="color: #8B4513; text-align: center;">Benvenuti a Catania</h2>
+            <p>
+                Situata al <strong>piano terra nel centro storico di Catania</strong>, la nostra casa è l’ideale per chi
+                vuole visitare la città a piedi.
+                Dispone di un <strong>ingresso privato</strong> con accesso diretto alle principali vie e attrazioni
+                come Piazza Duomo, via Etnea, il castello Ursino e lo storico mercato della Pescheria.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px;">
+                <div>
+                    <h3 style="color: #8A9A5B;">🏠 Servizi & Comfort</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✅ Letto matrimoniale + divano letto</li>
+                        <li>✅ Cucina: Induzione, microonde, macchina caffè, bollitore</li>
+                        <li>✅ Smart TV e Wi-Fi gratuito</li>
+                        <li>✅ Climatizzazione (estate/inverno) e Lavatrice</li>
+                        <li>✅ Biancheria inclusa e Asciugacapelli</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: #8A9A5B;">📍 Posizione & Logistica</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>🚗 <strong>Parcheggio custodito H24</strong> a soli 10 metri (a pagamento)</li>
+                        <li>🚌 Mezzi pubblici vicini per stazione e aeroporto</li>
+                        <li>✨ Vivi la movida serale senza bisogno dell’auto</li>
+                        <li>🗺️ Ideale per escursioni verso Etna, Taormina e Siracusa</li>
+                        <li>🏖️ Vicino alla Playa e alla splendida Scogliera</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 30px; font-style: italic;">
+                Ideale per coppie e famiglie che vogliono soggiornare più giorni o qualche settimana.
+            </p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 30px; background: #4A3728; color: white;">
+        <p>© 2026 Il Vicolo del Sole - Catania</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto - Il Vicolo del Sole</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="internal">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto Casa</a></li>
+                <li><a href="dintorni.html">Cosa Vedere</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+
+            <!-- HAMBURGER MENU ICON -->
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="language-switch notraslate" translate="no">
+                <span class="lang-label">ITA</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                    <span class="slider"></span>
+                </label>
+                <span class="lang-label">EN</span>
+            </div>
+            <div id="google_translate_element"></div>
+        </nav>
+
+        <!-- MOBILE MENU SIDEBAR -->
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto Casa</a></li>
+                <li><a href="dintorni.html">Cosa Vedere</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="max-width: 1100px; margin: 0 auto; padding: 40px; color: #4A3728;">
+
+        <section class="photo-gallery">
+            <h1 style="text-align: center; color: #8B4513;">La Nostra Casa</h1>
+            <p style="text-align: center; margin-bottom: 40px;">Esplora gli interni accoglienti e curati de Il Vicolo
+                del Sole.</p>
+
+            <section class="carousel-container">
+                <div class="carousel">
+                    <img src="img/esterno1.PNG" alt="Esterno della casa" class="active">
+                    <img src="img/esterno2.PNG" alt="Esterno della casa">
+                    <img src="img/soggiorno5.PNG" alt="Soggiorno della casa">
+                    <img src="img/soggiorno6.PNG" alt="Soggiorno della casa">
+                    <img src="img/soggiorno1.PNG" alt="Soggiorno della casa">
+                    <img src="img/soggiorno2.PNG" alt="Soggiorno della casa">
+                    <img src="img/soggiorno3.PNG" alt="Soggiorno della casa">
+                    <img src="img/soggiorno4.PNG" alt="Soggiorno della casa">
+                    <img src="img/soggiorno7.PNG" alt="Soggiorno della casa">
+                    <img src="img/soggiorno8.PNG" alt="Soggiorno della casa">
+                    <img src="img/camera1.PNG" alt="Camera da letto">
+                    <img src="img/bagno1.PNG" alt="Bagno della casa">
+                    <img src="img/bagno2.PNG" alt="Bagno della casa">
+                    <img src="img/bagno3.PNG" alt="Bagno della casa">
+                    <img src="img/soggiorno9.PNG" alt="Soggiorno della casa">
+                    <img src="img/soggiorno10.PNG" alt="Soggiorno della casa">
+                    <img src="img/soggiorno11.PNG" alt="Soggiorno della casa">
+                </div>
+            </section>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid #ddd; margin: 60px 0;">
+
+        <section class="video-tour-section">
+            <h2 style="text-align: center; color: #8B4513;">Video Tour Completo</h2>
+            <video controls poster="img/soggiorno1.PNG" playsinline>
+                <source src="video/tour-casa.mp4" type="video/mp4">
+                Il tuo browser non supporta il formato video.
+            </video>
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; padding: 20px; color: #666; margin-top: 40px;">
+        <p>© 2026 Il Vicolo del Sole - Catania</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

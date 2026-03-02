@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosa Vedere - Il Vicolo del Sole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="internal">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto Casa</a></li>
+                <li><a href="dintorni.html">Cosa Vedere</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+
+            <!-- HAMBURGER MENU ICON -->
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="language-switch notraslate" translate="no">
+                <span class="lang-label">ITA</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                    <span class="slider"></span>
+                </label>
+                <span class="lang-label">EN</span>
+            </div>
+            <div id="google_translate_element"></div>
+        </nav>
+
+        <!-- MOBILE MENU SIDEBAR -->
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto Casa</a></li>
+                <li><a href="dintorni.html">Cosa Vedere</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="max-width: 1200px; margin: 0 auto; padding: 40px;">
+        <h1 style="text-align: center;">Esplora Catania</h1>
+        <p style="text-align: center; margin-bottom: 40px;">La nostra casa si trova nel centro storico, il punto di
+            partenza ideale per scoprire i tesori della città.</p>
+
+        <div class="map-section" style="margin-bottom: 60px;">
+            <iframe width="100%" height="300"
+                style="border:0; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" loading="lazy"
+                allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4674063223063!2d15.083833476594273!3d37.50209597205562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313e2d67bef7357%3A0x99a607274863382d!2sVicolo%20della%20Sfera%2C%2019%2C%2095131%20Catania%20CT!5e0!3m2!1sit!2sit!4v1708975000000!5m2!1sit!2sit">
+            </iframe>
+        </div>
+
+        <div class="tourist-guide">
+            <h2 style="color: #8B4513; border-bottom: 2px solid #8A9A5B; padding-bottom: 10px;">Le Perle di Catania</h2>
+            <p><small><i>Clicca sulle schede per visualizzare il luogo su Google Maps</i></small></p>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Cattedrale+di+Sant%27Agata+Catania&query_place_id=ChIJP0UjWi7jExMRJytI986aC6g"
+                    target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🐘 Piazza del Duomo & Fontana dell'Elefante</h3>
+                        <p>A soli 5 minuti a piedi. È il cuore della città, dove potrai ammirare il "Liotru", simbolo di
+                            Catania, e la splendida Cattedrale di Sant'Agata.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Palazzo+Biscari+Catania&query_place_id=ChIJx6UP1zHjExMRo1oOCidARpo"
+                    target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🏛️ Palazzo Biscari</h3>
+                        <p>Il più importante palazzo privato di Catania. Un gioiello barocco con interni riccamente
+                            decorati, specchi e affreschi mozzafiato.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Fontana+dell%27Amenano+Catania&query_place_id=ChIJjfE4n-jjExMR0gwbhCQ0rk4"
+                    target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>⛲ Fontana dell'Amenano</h3>
+                        <p>Situata all'ingresso del mercato della pescheria, segna il punto in cui il fiume sotterraneo
+                            Amenano riemerge in superficie.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Teatro+Massimo+Bellini+Catania&query_place_id=ChIJhzCABy7jExMRQEgWdrJjEDA"
+                    target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🎭 Teatro Massimo Bellini</h3>
+                        <p>Un tempio della musica dedicato a Vincenzo Bellini. La sua acustica è considerata tra le
+                            migliori al mondo.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Pescheria+di+Catania&query_place_id=ChIJwStnHC_jExMRlVux7ojgnyY"
+                    target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🐟 La Pescheria</h3>
+                        <p>Visita lo storico mercato del pesce per un'esperienza autentica tra colori, odori e grida dei
+                            mercanti siciliani.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/Via+Etnea+Catania" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🌋 Via Etnea</h3>
+                        <p>La via principale che attraversa il centro storico, ricca di negozi, bar storici e una vista
+                            mozzafiato sull'Etna.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/Anfiteatro+Romano+Catania" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🏛️ Anfiteatro Romano</h3>
+                        <p>Situato in Piazza Stesicoro, è una delle testimonianze più imponenti della Catania imperiale
+                            antica.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; color: #666;">
+        <p>© 2026 Il Vicolo del Sole - Catania</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Nostri Servizi - Il Vicolo del Sole</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="internal">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto Casa</a></li>
+                <li><a href="dintorni.html">Cosa Vedere</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+
+            <!-- HAMBURGER MENU ICON -->
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="language-switch notraslate" translate="no">
+                <span class="lang-label">ITA</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                    <span class="slider"></span>
+                </label>
+                <span class="lang-label">EN</span>
+            </div>
+            <div id="google_translate_element"></div>
+        </nav>
+
+        <!-- MOBILE MENU SIDEBAR -->
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto Casa</a></li>
+                <li><a href="dintorni.html">Cosa Vedere</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 style="text-align:center; margin-top:30px; color: #8B4513;">Comfort & Relax</h1>
+        <p style="text-align:center; max-width: 800px; margin: 0 auto 40px auto;">
+            Il Vicolo del Sole è attrezzato per offrirti un soggiorno senza pensieri, sia per un weekend che per vacanze
+            più lunghe.
+        </p>
+
+        <div class="servizi-lista">
+            <div class="card-servizio">
+                <span>📶</span>
+                <h3>Wi-Fi & Intrattenimento</h3>
+                <p>Connessione Wi-Fi gratuita in tutta la struttura e Smart TV a schermo piatto nell'area living.</p>
+            </div>
+
+            <div class="card-servizio">
+                <span>❄️</span>
+                <h3>Climatizzazione</h3>
+                <p>Comfort garantito tutto l'anno con sistema di climatizzazione per estate e inverno.</p>
+            </div>
+
+            <div class="card-servizio">
+                <span>🍳</span>
+                <h3>Cucina Completa</h3>
+                <p>Forno a induzione, microonde, frigorifero, macchina del caffè e bollitore. Set completo di piatti,
+                    pentole e posate.</p>
+            </div>
+
+            <div class="card-servizio">
+                <span>🧺</span>
+                <h3>Bagno & Lavanderia</h3>
+                <p>Bagno funzionale con doccia, asciugacapelli e lavatrice a disposizione per soggiorni prolungati.</p>
+            </div>
+
+            <div class="card-servizio">
+                <span>🛌</span>
+                <h3>Riposo & Tessili</h3>
+                <p>Letto matrimoniale, divano letto e biancheria inclusa (lenzuola e asciugamani puliti).</p>
+            </div>
+
+            <div class="card-servizio">
+                <span>🅿️</span>
+                <h3>Parcheggio & Mezzi</h3>
+                <p>Parcheggio a pagamento custodito H24 a soli 10 metri. Autobus per aeroporto e stazione a pochi
+                    minuti.</p>
+            </div>
+        </div>
+
+        <div
+            style="background: white; padding: 30px; border-radius: 15px; margin-top: 50px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center;">
+            <h3 style="color: #8A9A5B;">Oltre l'Appartamento</h3>
+            <p>Grazie alla posizione strategica, potrai goderti la movida serale di Catania o raggiungere in breve tempo
+                la <strong>Playa</strong>, la <strong>Scogliera</strong>, l'<strong>Etna</strong>,
+                <strong>Taormina</strong> e <strong>Siracusa</strong>.
+            </p>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; color: #666; margin-top: 40px;">
+        <p>© 2026 Il Vicolo del Sole - Catania</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
