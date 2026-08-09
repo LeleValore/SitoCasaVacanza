@@ -43,4 +43,14 @@ document.addEventListener('DOMContentLoaded', function () {
             hamburger.setAttribute('aria-expanded', 'false');
         }
     });
+
+    // Header trasparente in cima, solido dopo lo scroll (solo home page)
+    const header = document.querySelector('header:not(.internal)');
+    if (header) {
+        const applyScrollState = function () {
+            header.classList.toggle('is-scrolled', window.scrollY > window.innerHeight * 0.75);
+        };
+        applyScrollState();
+        window.addEventListener('scroll', applyScrollState, { passive: true });
+    }
 });
