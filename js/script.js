@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dotsWrap = document.querySelector('.carousel-dots');
     const prevBtn = document.querySelector('.carousel-btn.prev');
     const nextBtn = document.querySelector('.carousel-btn.next');
+    const counterCurrent = document.querySelector('.carousel-counter .current');
     const total = slides.length;
 
     if (!track || total === 0) return;
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function setActive(index) {
         currentIndex = index;
         dots.forEach(function (dot, i) { dot.classList.toggle('active', i === index); });
+        if (counterCurrent) counterCurrent.textContent = index + 1;
     }
 
     function goToSlide(index) {

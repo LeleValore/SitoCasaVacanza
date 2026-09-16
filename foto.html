@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foto - Il Vicolo del Sole</title>
+    <meta name="description"
+        content="Sfoglia la galleria fotografica e il video tour de Il Vicolo del Sole, casa vacanza nel centro storico di Catania.">
+    <meta name="theme-color" content="#3D2E22">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238B4513'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23FBF7EF'/%3E%3Cg stroke='%23FBF7EF' stroke-width='4' stroke-linecap='round'%3E%3Cline x1='32' y1='6' x2='32' y2='14'/%3E%3Cline x1='32' y1='50' x2='32' y2='58'/%3E%3Cline x1='6' y1='32' x2='14' y2='32'/%3E%3Cline x1='50' y1='32' x2='58' y2='32'/%3E%3Cline x1='13' y1='13' x2='19' y2='19'/%3E%3Cline x1='45' y1='45' x2='51' y2='51'/%3E%3Cline x1='13' y1='51' x2='19' y2='45'/%3E%3Cline x1='45' y1='19' x2='51' y2='13'/%3E%3C/g%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
     <link
@@ -12,7 +15,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="has-mobile-cta">
 
     <header class="internal">
         <nav>
@@ -51,11 +54,11 @@
         <div class="mobile-menu">
             <div class="mobile-menu-brand">Il Vicolo del Sole<span>Catania Centro</span></div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="servizi.html">Servizi</a></li>
-                <li><a href="foto.html">Foto Casa</a></li>
-                <li><a href="dintorni.html">Cosa Vedere</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="index.html" data-icon="🏠">Home</a></li>
+                <li><a href="servizi.html" data-icon="🛎️">Servizi</a></li>
+                <li><a href="foto.html" data-icon="📷">Foto Casa</a></li>
+                <li><a href="dintorni.html" data-icon="🗺️">Cosa Vedere</a></li>
+                <li><a href="contatti.html" data-icon="📞">Contatti</a></li>
             </ul>
         </div>
     </header>
@@ -70,43 +73,86 @@
 
         <section class="carousel-container">
             <div class="carousel-track">
-                <div class="carousel-slide"><img src="img/esterno1.webp" alt="Esterno della casa" loading="eager">
-                </div>
-                <div class="carousel-slide"><img src="img/esterno2.webp" alt="Esterno della casa" loading="lazy">
-                </div>
-                <div class="carousel-slide"><img src="img/esterno3.webp" alt="Ingresso privato con cortile e gazebo"
+                <div class="carousel-slide"><img src="img/esterno1.webp"
+                        srcset="img/esterno1-640.webp 640w, img/esterno1-1080.webp 1080w, img/esterno1.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Ingresso privato con portoncino e piante"
+                        loading="eager" fetchpriority="high"></div>
+                <div class="carousel-slide"><img src="img/esterno2.webp"
+                        srcset="img/esterno2-640.webp 640w, img/esterno2-1080.webp 1080w, img/esterno2.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Cortile interno con tavolino e sedie"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/esterno4.webp" alt="Cortile esterno con giardino"
+                <div class="carousel-slide"><img src="img/esterno3.webp"
+                        srcset="img/esterno3-640.webp 640w, img/esterno3-1080.webp 1080w, img/esterno3.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Cortile con gazebo e staccionata in legno"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno5.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/esterno4.webp"
+                        srcset="img/esterno4-640.webp 640w, img/esterno4-1080.webp 1080w, img/esterno4.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Vista del cortile esterno con ombrellone"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno6.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/soggiorno5.webp"
+                        srcset="img/soggiorno5-640.webp 640w, img/soggiorno5-1080.webp 1080w, img/soggiorno5.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Cucina completa con piano cottura a induzione"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno1.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/soggiorno6.webp"
+                        srcset="img/soggiorno6-640.webp 640w, img/soggiorno6-1080.webp 1080w, img/soggiorno6.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Divano giallo con quadro colorato"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno2.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/soggiorno1.webp"
+                        srcset="img/soggiorno1-640.webp 640w, img/soggiorno1-1080.webp 1080w, img/soggiorno1.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Angolo cottura con TV a parete e tavolo da pranzo"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno3.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/soggiorno2.webp"
+                        srcset="img/soggiorno2-640.webp 640w, img/soggiorno2-1080.webp 1080w, img/soggiorno2.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Zona giorno con soffitto a volta e divano giallo"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno4.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/soggiorno3.webp"
+                        srcset="img/soggiorno3-640.webp 640w, img/soggiorno3-1080.webp 1080w, img/soggiorno3.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Cucina attrezzata con piano in legno"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno7.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/soggiorno4.webp"
+                        srcset="img/soggiorno4-640.webp 640w, img/soggiorno4-1080.webp 1080w, img/soggiorno4.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Cucina open space con soffitto a volta"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno8.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/soggiorno7.webp"
+                        srcset="img/soggiorno7-640.webp 640w, img/soggiorno7-1080.webp 1080w, img/soggiorno7.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Camera con letto matrimoniale e quadri decorativi"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/camera1.webp" alt="Camera da letto" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/bagno1.webp" alt="Bagno della casa" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/bagno2.webp" alt="Bagno della casa" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/bagno3.webp" alt="Bagno della casa" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno9.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/soggiorno8.webp"
+                        srcset="img/soggiorno8-640.webp 640w, img/soggiorno8-1080.webp 1080w, img/soggiorno8.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Camera da letto con dettagli decorativi siciliani"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno10.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/camera1.webp"
+                        srcset="img/camera1-640.webp 640w, img/camera1-1080.webp 1080w, img/camera1.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Camera da letto con decorazioni a tema cactus"
                         loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/soggiorno11.webp" alt="Soggiorno della casa"
+                <div class="carousel-slide"><img src="img/bagno1.webp"
+                        srcset="img/bagno1-640.webp 640w, img/bagno1-1080.webp 1080w, img/bagno1.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Bagno con doccia in vetro e specchio"
+                        loading="lazy"></div>
+                <div class="carousel-slide"><img src="img/bagno2.webp"
+                        srcset="img/bagno2-640.webp 640w, img/bagno2-1080.webp 1080w, img/bagno2.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Dettaglio doccia con cortesia bagno"
+                        loading="lazy"></div>
+                <div class="carousel-slide"><img src="img/bagno3.webp"
+                        srcset="img/bagno3-640.webp 640w, img/bagno3-1080.webp 1080w, img/bagno3.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Bagno con doccia, lavabo e mobile in legno"
+                        loading="lazy"></div>
+                <div class="carousel-slide"><img src="img/soggiorno9.webp"
+                        srcset="img/soggiorno9-640.webp 640w, img/soggiorno9-1080.webp 1080w, img/soggiorno9.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Dettaglio decorativo, tamburello siciliano"
+                        loading="lazy"></div>
+                <div class="carousel-slide"><img src="img/soggiorno10.webp"
+                        srcset="img/soggiorno10-640.webp 640w, img/soggiorno10-1080.webp 1080w, img/soggiorno10.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Corridoio con quadro di Catania"
+                        loading="lazy"></div>
+                <div class="carousel-slide"><img src="img/soggiorno11.webp"
+                        srcset="img/soggiorno11-640.webp 640w, img/soggiorno11-1080.webp 1080w, img/soggiorno11.webp 1920w"
+                        sizes="(max-width: 768px) 100vw, 1200px" alt="Angolo soggiorno con teste di moro siciliane"
                         loading="lazy"></div>
             </div>
             <button class="carousel-btn prev" aria-label="Immagine precedente">‹</button>
             <button class="carousel-btn next" aria-label="Immagine successiva">›</button>
+            <div class="carousel-counter"><span class="current">1</span> / <span class="total">19</span></div>
             <div class="carousel-dots"></div>
         </section>
         <p class="gallery-hint">Scorri o trascina per vedere tutte le foto →</p>
@@ -128,8 +174,14 @@
         <p>© 2026 Il Vicolo del Sole - Catania</p>
     </footer>
 
+    <div class="mobile-cta-bar">
+        <a href="https://wa.me/393425695486" target="_blank" class="cta-whatsapp" aria-label="Contattaci su WhatsApp">💬</a>
+        <a href="contatti.html" class="cta-book">📅 Prenota Ora</a>
+    </div>
+
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/reveal.js"></script>
     <script type="text/javascript" src="js/translate.js"></script>
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
